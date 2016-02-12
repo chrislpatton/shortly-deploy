@@ -62,12 +62,10 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      options: {
-        keepSpecialComments: 0
-      },
-      dist: {
+      
+      target: {
         files: {
-          'public/dist/style.min.css': 'public/style.css'
+          'public/dist/style.min.css': ['public/style.css']
         }
       }
     },
